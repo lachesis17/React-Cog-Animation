@@ -1,3 +1,11 @@
+html {
+  background: linear-gradient(270deg, #282c34, #141414);
+  background-size: 400% 400%;
+  -webkit-animation: gradientAnimation 12s ease infinite;
+  -moz-animation: gradientAnimation 12s ease infinite;
+  animation: gradientAnimation 12s ease infinite;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@-webkit-keyframes gradientAnimation {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+@-moz-keyframes gradientAnimation {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+@keyframes gradientAnimation {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
 }

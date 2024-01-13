@@ -1,22 +1,17 @@
-import logo from './logo.svg';
+import cog1 from './cog1.svg';
+import cog2 from './cog2.svg';
+import cog3 from './cog3.svg';
+import cog4 from './cog4.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={cog1} className="cog1" alt="logo" />
+        <img src={cog2} className="cog2" alt="logo" />
+        <img src={cog3} className="cog3" alt="logo" />
+        <img src={cog4} className="cog4" alt="logo" />
       </header>
     </div>
   );

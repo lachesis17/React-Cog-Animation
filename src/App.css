@@ -1,38 +1,77 @@
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /* column align */
+}
+
+.cog1,
+.cog2,
+.cog3 {
   height: 40vmin;
   pointer-events: none;
+  margin: -4vmin;
+}
+
+.cog1 {
+  height: 25vmin;
+  pointer-events: none;
+  margin-top: -3vmin;
+  align-self: flex-start; 
+}
+
+.cog4 {
+  height: 25vmin;
+  pointer-events: none;
+  margin-top: 25vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .cog1 {
+    animation: cog1-spin-rev infinite 0.9s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (prefers-reduced-motion: no-preference) {
+  .cog2 {
+    animation: cog1-spin infinite 1.5s linear;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (prefers-reduced-motion: no-preference) {
+  .cog3 {
+    animation: cog1-spin-rev infinite 2.5s linear;
+  }
 }
 
-@keyframes App-logo-spin {
+@media (prefers-reduced-motion: no-preference) {
+  .cog4 {
+    animation: cog1-spin infinite 2.5s linear;
+  }
+}
+
+@keyframes cog1-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes cog1-spin-rev {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
