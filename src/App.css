@@ -4,6 +4,7 @@
   justify-content: center;
   height: 100vh;
   text-align: center;
+  margin: 0 auto;
 }
 
 .App-header {
@@ -13,25 +14,43 @@
   flex-direction: row; /* column align */
 }
 
+.cog-wrapper {
+  animation: colorChange 12s infinite;
+  align-self: flex-start; 
+  margin: 0 auto;
+}
+
 .cog1,
 .cog2,
 .cog3 {
   height: 40vmin;
   pointer-events: none;
-  margin: -4vmin;
+  margin: -5vmin;
 }
 
 .cog1 {
-  height: 25vmin;
+  height: 30vmin;
   pointer-events: none;
-  margin-top: -3vmin;
+  margin-top: -0.5vmin;
+  margin-right: -7.0vmin;
   align-self: flex-start; 
 }
 
+.cog2 
+{
+  margin-top: 2.0vmin;
+}
+
+.cog3
+{
+  margin-top: 12.0vmin;
+}
+
 .cog4 {
-  height: 25vmin;
+  height: 20vmin;
   pointer-events: none;
-  margin-top: 25vmin;
+  margin-top: 35vmin;
+  margin-left: -2.0vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -73,5 +92,29 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(90deg) saturate(10%) brightness(100%);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes colorChange2 {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(90deg) saturate(100%) brightness(100%); 
+  }
+  100% {
+    filter: hue-rotate(0deg);
   }
 }
