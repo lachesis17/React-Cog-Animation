@@ -1,9 +1,9 @@
 html {
   background: linear-gradient(270deg, rgb(40, 44, 52), rgb(10, 10, 10));
   background-size: 2000% 400%;
-  -webkit-animation: gradientAnimation 12s ease infinite;
-  -moz-animation: gradientAnimation 12s ease infinite;
-  animation: gradientAnimation 12s ease infinite;
+  -webkit-animation: gradientAnimation 15s ease infinite;
+  -moz-animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 15s ease infinite;
 }
 
 body {
