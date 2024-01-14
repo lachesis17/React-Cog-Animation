@@ -16,6 +16,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: row; /* column align */
+  
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: bottom;
+  flex-direction: column;
+  font-family: 'Roboto';
+  color: white;
+  font-size: small;
+  height: 100vh;
 }
 
 .cog-wrapper { /* wrappers needed to adjust the hue/color of the svg */
