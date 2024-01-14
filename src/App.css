@@ -5,6 +5,10 @@
   height: 100vh;
   text-align: center;
   margin: 0 auto;
+  flex-direction: column;
+  font-family: 'Roboto';
+  color: white;
+  font-size: small;
 }
 
 .App-header {
