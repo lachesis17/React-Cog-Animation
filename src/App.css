@@ -16,7 +16,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row; /* column align */
-  
 }
 
 .main {
@@ -56,16 +55,19 @@
   margin-top: -0.5vmin;
   margin-right: -7.0vmin;
   align-self: flex-start; 
+  animation: cog1-spin-rev infinite 0.9s linear;
 }
 
 .cog2 
 {
   margin-top: 2.0vmin;
+  animation: cog1-spin infinite 1.5s linear;
 }
 
 .cog3
 {
   margin-top: 12.0vmin;
+  animation: cog1-spin-rev infinite 2.75s linear;
 }
 
 .cog4 {
@@ -73,30 +75,7 @@
   pointer-events: none;
   margin-top: 35vmin;
   margin-left: -2.0vmin;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .cog1 {
-    animation: cog1-spin-rev infinite 0.9s linear;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .cog2 {
-    animation: cog1-spin infinite 1.5s linear;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .cog3 {
-    animation: cog1-spin-rev infinite 2.75s linear;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .cog4 {
-    animation: cog1-spin infinite 1.25s linear;
-  }
+  animation: cog1-spin infinite 1.25s linear;
 }
 
 @keyframes cog1-spin {
